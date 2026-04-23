@@ -2,10 +2,158 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<title>Padrão Montadora - TEXA do Brasil</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Padrão Montadora — TEXA do Brasil</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #012169 0%, #011547 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: #fff;
+  }
+  .card {
+    background: #fff;
+    color: #2C2C2C;
+    border-radius: 16px;
+    max-width: 480px;
+    width: 100%;
+    padding: 48px 36px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    text-align: center;
+  }
+  .selo {
+    display: inline-block;
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: #B8860B;
+    font-weight: 500;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+  }
+  h1 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #012169;
+    margin-bottom: 12px;
+    letter-spacing: -0.5px;
+    line-height: 1.3;
+  }
+  .subtitle {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 32px;
+    font-style: italic;
+  }
+  .greeting {
+    font-size: 18px;
+    color: #2C2C2C;
+    margin-bottom: 8px;
+  }
+  .guest-name {
+    font-size: 24px;
+    font-weight: 700;
+    color: #012169;
+    margin-bottom: 24px;
+  }
+  .intro {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #444;
+    margin-bottom: 24px;
+  }
+  .details {
+    background: #F5F5F5;
+    border-left: 3px solid #012169;
+    padding: 20px;
+    text-align: left;
+    margin: 24px 0;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 1.7;
+  }
+  .details strong { color: #012169; }
+  .btn {
+    display: block;
+    width: 100%;
+    padding: 16px;
+    margin-top: 12px;
+    border: none;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: transform 0.1s, box-shadow 0.2s;
+  }
+  .btn-confirm {
+    background: #012169;
+    color: #fff;
+  }
+  .btn-confirm:hover {
+    box-shadow: 0 6px 16px rgba(1,33,105,0.4);
+  }
+  .btn-decline {
+    background: #fff;
+    color: #666;
+    border: 1px solid #ddd;
+  }
+  .btn-decline:hover {
+    background: #fafafa;
+  }
+  .footer-note {
+    margin-top: 32px;
+    font-size: 12px;
+    color: #999;
+    line-height: 1.5;
+  }
+</style>
 </head>
 <body>
-<h1>Padrão Montadora</h1>
-<p>Página de teste - TEXA do Brasil</p>
+<div class="card">
+<div class="selo">Padrão Montadora</div>
+<h1>Diagnóstico oficial<br>na sua oficina</h1>
+<p class="subtitle">Um encontro exclusivo da TEXA do Brasil</p>
+
+ 
+
+    <p class="greeting">Olá,</p>
+<p class="guest-name">Sr. Roberto Silva</p>
+
+ 
+
+    <p class="intro">
+      Será uma honra receber o(a) senhor(a) em nossa casa para uma noite
+      dedicada aos proprietários das oficinas de São Caetano.
+</p>
+
+ 
+
+    <div class="details">
+<strong>Data:</strong> [data a definir]<br>
+<strong>Horário:</strong> [horário a definir]<br>
+<strong>Local:</strong> Sede da TEXA do Brasil<br>
+      São Caetano do Sul — SP<br>
+<strong>Traje:</strong> passeio<br>
+<strong>Estacionamento:</strong> cortesia
+</div>
+
+ 
+
+    <button class="btn btn-confirm">Sim, confirmo minha presença</button>
+<button class="btn btn-decline">Infelizmente não poderei</button>
+
+ 
+
+    <p class="footer-note">
+      Em caso de dúvidas, entre em contato pelo<br>
+      WhatsApp [número] ou e-mail [endereço]
+</p>
+</div>
 </body>
 </html>
